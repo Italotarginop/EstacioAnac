@@ -1,0 +1,139 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs36\lang22 Est\'e1cio Campus Recife\b0\fs22\par
+\par
+\par
+\fs28 Cancelamento de VOOS entre 2000-2024.\par
+\fs22 An\'e1lise de Cancelamentos de Voos no Brasil (2000-2024): Uma Ferramenta de Transpar\'eancia e Consulta P\'fablica a partir de Dados Abertos da ANAC\par
+\par
+Nome do(s) discente(s) integrantes do grupo\par
+Luiz Ant\'f4nio J\'fanior\par
+Cl\'e9lio Medina\par
+\'cdtalo Targino\par
+Vladmir\par
+\par
+Nome do(a) professor(a) orientador\par
+ Davi de Barros Fernandes C\'e2mara\par
+\par
+Ano\par
+2025\par
+\par
+Cidade/estado\par
+Recife/PE\par
+\par
+1. DIAGN\'d3STICO E TEORIZA\'c7\'c3O\par
+1.1 Identifica\'e7\'e3o das partes interessadas e parceiros\par
+As partes interessadas neste projeto dividem-se em dois grupos principais: o p\'fablico consumidor de transporte a\'e9reo e os agentes do setor de avia\'e7\'e3o.\par
+\par
+O p\'fablico principal s\'e3o os passageiros de voos dom\'e9sticos e internacionais no Brasil. Este grupo \'e9 demograficamente diverso, abrangendo todas as faixas et\'e1rias, perfis socioecon\'f4micos e n\'edveis de escolaridade. Inclui viajantes a neg\'f3cios, turistas, estudantes e pessoas se deslocando por motivos familiares ou de sa\'fade. A quantidade estimada de participantes \'e9 vasta, correspondendo a milh\'f5es de passageiros anualmente afetados por opera\'e7\'f5es a\'e9reas. O interesse deles reside em compreender a frequ\'eancia e os motivos dos cancelamentos para tomar decis\'f5es mais informadas ao planejar viagens.\par
+\par
+O p\'fablico secund\'e1rio inclui ag\'eancias de viagem, operadores de turismo, companhias a\'e9reas, administradores de aeroportos e a pr\'f3pria Ag\'eancia Nacional de Avia\'e7\'e3o Civil (ANAC). Estes stakeholders podem utilizar os dados consolidados para an\'e1lise de mercado, planejamento estrat\'e9gico e otimiza\'e7\'e3o de opera\'e7\'f5es.\par
+\par
+O parceiro-chave, ainda que indireto, \'e9 a ANAC, que disponibiliza os dados p\'fablicos atrav\'e9s do seu portal SIROS. A parceria consiste no uso de seus dados abertos, n\'e3o havendo um termo de coopera\'e7\'e3o formal, uma vez que a informa\'e7\'e3o \'e9 de livre acesso, o que democratiza a sua utiliza\'e7\'e3o para fins de pesquisa e extens\'e3o.\par
+\par
+1.2 Problem\'e1tica e/ou problemas identificados\par
+A problem\'e1tica central identificada \'e9 a falta de acesso a informa\'e7\'f5es consolidadas e de f\'e1cil compreens\'e3o sobre o hist\'f3rico de cancelamentos de voos no Brasil. Passageiros frequentemente enfrentam cancelamentos que geram frustra\'e7\'e3o, perdas financeiras e transtornos log\'edsticos, mas n\'e3o possuem uma ferramenta unificada para consultar o desempenho hist\'f3rico das rotas e companhias a\'e9reas.\par
+\par
+Embora a ANAC forne\'e7a os dados brutos (Voo Regular Atendido - VRA), eles est\'e3o dispersos em centenas de arquivos mensais (formato CSV) que, para o cidad\'e3o comum, s\'e3o de dif\'edcil acesso, manipula\'e7\'e3o e interpreta\'e7\'e3o. A demanda sociocomunit\'e1ria foi identificada a partir da observa\'e7\'e3o de um problema p\'fablico not\'f3rio, amplamente discutido em m\'eddias sociais, not\'edcias e conversas cotidianas, refletindo uma necessidade coletiva por maior transpar\'eancia no setor a\'e9reo. O projeto busca, portanto, solucionar essa lacuna de informa\'e7\'e3o.\par
+\par
+1.3 Justificativa\par
+Este projeto possui alta pertin\'eancia acad\'eamica, pois aplica diretamente os conhecimentos do curso (presumivelmente de Ci\'eancia da Computa\'e7\'e3o, An\'e1lise de Sistemas ou \'e1reas afins) na resolu\'e7\'e3o de uma demanda social real. A aprendizagem baseada em projetos \'e9 materializada atrav\'e9s da cria\'e7\'e3o de uma solu\'e7\'e3o tecnol\'f3gica \f1\endash  um processo automatizado de coleta, tratamento e apresenta\f0\'e7\'e3o de dados \f1\endash  para um problema concreto.\par
+\par
+A rela\f0\'e7\'e3o com o curso \'e9 direta, pois o projeto envolve compet\'eancias centrais da \'e1rea de tecnologia, como desenvolvimento de software (Python), automa\'e7\'e3o de tarefas (web scraping), manipula\'e7\'e3o e an\'e1lise de grandes volumes de dados (Big Data), e desenvolvimento web front-end (HTML para o dashboard). Alinha-se perfeitamente com os objetivos de forma\'e7\'e3o que visam capacitar os alunos a construir solu\'e7\'f5es que gerem valor para a sociedade.\par
+\par
+As motiva\'e7\'f5es do grupo de trabalho partem do desafio t\'e9cnico de manipular um vasto conjunto de dados (mais de 24 anos de registros) e, principalmente, da possibilidade de transformar esses dados brutos em uma ferramenta de utilidade p\'fablica, promovendo transpar\'eancia e empoderando o cidad\'e3o-consumidor.\par
+\par
+1.4 Objetivos/resultados/efeitos a serem alcan\'e7ados\par
+Desenvolver uma solu\'e7\'e3o automatizada para extrair, consolidar e processar os dados hist\'f3ricos de voos (2000-2024) disponibilizados publicamente pela ANAC.\par
+Analisar o conjunto de dados consolidado para gerar estat\'edsticas-chave sobre os cancelamentos de voos, identificando as principais causas, sazonalidades e tend\'eancias ao longo do per\'edodo.\par
+Criar e disponibilizar um dashboard web (dashboard_cancelamentos_voos.html) que apresente os resultados da an\'e1lise de forma clara, textual e acess\'edvel, permitindo que o p\'fablico geral compreenda o cen\'e1rio de cancelamentos de voos no Brasil sem a necessidade de interpretar informa\'e7\'f5es complexas.\par
+1.5 Referencial te\'f3rico\par
+A fundamenta\'e7\'e3o te\'f3rica do projeto \'e9 interdisciplinar, apoiando-se em conceitos de Ci\'eancia de Dados, Estudos Sociais da Tecnologia e Comunica\'e7\'e3o.\par
+\par
+Primeiramente, o projeto se baseia no conceito de Storytelling com Dados (Data Storytelling), popularizado por Cole Nussbaumer Knaflic. Em sua obra "Storytelling with Data", a autora defende que a efic\'e1cia da comunica\'e7\'e3o de dados n\'e3o reside em mostrar os dados brutos, mas em construir uma narrativa clara que guie o p\'fablico atrav\'e9s das descobertas. O projeto aplica esse conceito ao optar por um dashboard textual, que n\'e3o apenas apresenta n\'fameros, mas os contextualiza em frases explicativas, contando a "hist\'f3ria" dos cancelamentos de voos. A escolha de n\'e3o usar tabelas ou gr\'e1ficos complexos \'e9 uma decis\'e3o deliberada para reduzir a carga cognitiva do usu\'e1rio e focar na mensagem principal.\par
+\par
+Em segundo lugar, a iniciativa dialoga com as teorias do soci\'f3logo Manuel Castells sobre a Sociedade em Rede e o Poder da Informa\'e7\'e3o. Em "A Era da Informa\'e7\'e3o", Castells discute como o acesso e o controle da informa\'e7\'e3o reconfiguram as rela\'e7\'f5es de poder. Este projeto atua como um agente democratizador: ele transforma dados governamentais (potencialmente opacos) em informa\'e7\'e3o acess\'edvel ao cidad\'e3o comum. Ao fazer isso, contribui para reduzir a assimetria de informa\'e7\'e3o entre consumidores e grandes corpora\'e7\'f5es, empoderando o p\'fablico e promovendo a transpar\'eancia.\par
+\par
+Por fim, a execu\'e7\'e3o pr\'e1tica \'e9 orientada pela Metodologia de Projetos de Ci\'eancia de Dados (CRISP-DM). Embora seja um modelo de processo, o CRISP-DM oferece um framework te\'f3rico que estrutura o plano de trabalho de forma l\'f3gica e cientificamente validada, atrav\'e9s de fases como Compreens\'e3o do Neg\'f3cio, Compreens\'e3o dos Dados, Prepara\'e7\'e3o dos Dados, Modelagem, Avalia\'e7\'e3o e Implanta\'e7\'e3o. Autores como Jiawei Han, Micheline Kamber e Jian Pei em "Data Mining: Concepts and Techniques" detalham os princ\'edpios por tr\'e1s de cada uma dessas etapas, justificando a abordagem t\'e9cnica escolhida para garantir a robustez da solu\'e7\'e3o.\par
+\par
+2. PLANEJAMENTO E DESENVOLVIMENTO DO PROJETO\par
+2.1 Plano de trabalho\par
+O plano de trabalho foi estruturado em seis fases sequenciais, descritas textualmente a seguir:\par
+\par
+Fase 1: Setup e Pesquisa (Semanas 1-2)\par
+Nesta fase inicial, todo o grupo se dedicar\'e1 \'e0 defini\'e7\'e3o do escopo final do projeto, \'e0 consolida\'e7\'e3o do referencial te\'f3rico e \'e0 configura\'e7\'e3o dos ambientes de desenvolvimento em seus computadores. Ser\'e3o utilizadas ferramentas colaborativas como Google Docs e um sistema de versionamento como Git/GitHub desde o in\'edcio.\par
+\par
+Fase 2: Coleta de Dados (Semanas 3-5)\par
+Esta fase ficar\'e1 a cargo de Luiz Ant\'f4nio J\'fanior. Ele ser\'e1 respons\'e1vel por desenvolver o script scraper_anac.py para a extra\'e7\'e3o autom\'e1tica dos dados. Ao final, ele executar\'e1 o script para baixar todos os arquivos CSV do portal da ANAC para a pasta dados_vra_anac, utilizando Python com as bibliotecas Requests e BeautifulSoup4.\par
+\par
+Fase 3: Processamento e Consolida\'e7\'e3o (Semanas 6-7)\par
+Cl\'e9lio Medina conduzir\'e1 esta etapa. Sua responsabilidade ser\'e1 desenvolver e aplicar as rotinas para unificar todos os arquivos CSV em um \'fanico conjunto de dados, realizando a limpeza e o pr\'e9-processamento necess\'e1rios para garantir a qualidade e a consist\'eancia dos dados. A ferramenta central para esta tarefa ser\'e1 a biblioteca Pandas do Python.\par
+\par
+Fase 4: An\'e1lise e Gera\'e7\'e3o de Conte\'fado (Semanas 8-10)\par
+Esta fase ser\'e1 liderada por \'cdtalo Targino. Ele desenvolver\'e1 o script results.py, que realizar\'e1 a an\'e1lise estat\'edstica sobre os dados consolidados e, crucialmente, ir\'e1 gerar os resumos textuais que formar\'e3o o conte\'fado do dashboard. O trabalho ser\'e1 feito inteiramente em Python, com uso intensivo da biblioteca Pandas.\par
+\par
+Fase 5: Apresenta\'e7\'e3o e Desenvolvimento do Dashboard (Semanas 11-12)\par
+Vladmir ser\'e1 o respons\'e1vel por esta fase de apresenta\'e7\'e3o. Ele criar\'e1 o arquivo dashboard_cancelamentos_voos.html e integrar\'e1 os textos anal\'edticos gerados na fase anterior, focando em uma apresenta\'e7\'e3o limpa e de f\'e1cil leitura, usando HTML e CSS b\'e1sico.\par
+\par
+Fase 6: Encerramento e Documenta\'e7\'e3o (Semanas 13-14)\par
+Na etapa final, todo o grupo colaborar\'e1. A equipe far\'e1 a revis\'e3o final do projeto, realizar\'e1 testes no dashboard e concluir\'e1 a reda\'e7\'e3o deste Relat\'f3rio de Extens\'e3o, consolidando o trabalho no GitHub e no Google Docs.\par
+\par
+2.2 Descri\'e7\'e3o da forma de envolvimento do p\'fablico participante\par
+O envolvimento do p\'fablico sociocomunit\'e1rio neste projeto ocorre de maneira indireta, mas fundamental. A formula\'e7\'e3o do projeto partiu da escuta de uma demanda p\'fablica difusa: a necessidade de transpar\'eancia sobre cancelamentos de voos. Essa "escuta" se deu pela an\'e1lise de not\'edcias, f\'f3runs de viajantes online e redes sociais.\par
+\par
+No desenvolvimento, o p\'fablico \'e9 o foco central do design da solu\'e7\'e3o. A decis\'e3o de criar um dashboard textual, simples e direto, foi tomada pensando no usu\'e1rio final, que n\'e3o necessariamente possui letramento em dados.\par
+\par
+Na avalia\'e7\'e3o, o principal mecanismo de envolvimento ser\'e1 a disponibiliza\'e7\'e3o de um canal de feedback no pr\'f3prio dashboard (ex: um link para um formul\'e1rio Google), convidando os usu\'e1rios a comentarem sobre a utilidade e clareza da ferramenta. Esses registros servir\'e3o como evid\'eancia da intera\'e7\'e3o e do impacto do projeto.\par
+\par
+2.3 Grupo de trabalho (descri\'e7\'e3o da responsabilidade de cada membro)\par
+Luiz Ant\'f4nio J\'fanior: Respons\'e1vel pela Coleta de Dados. Sua principal atividade foi desenvolver e executar o script scraper_anac.py para automatizar o download de todos os arquivos de VRA do portal da ANAC.\par
+Cl\'e9lio Medina: Respons\'e1vel pelo Tratamento e Consolida\'e7\'e3o dos Dados. Sua fun\'e7\'e3o foi desenvolver a l\'f3gica para unificar os m\'faltiplos arquivos CSV, realizando a limpeza e padroniza\'e7\'e3o dos dados.\par
+\'cdtalo Targino: Respons\'e1vel pela An\'e1lise de Dados. Atuou no desenvolvimento do script results.py, que processa o dataset consolidado para calcular as estat\'edsticas e gerar os textos para o dashboard.\par
+Vladmir: Respons\'e1vel pelo Desenvolvimento do Dashboard e Documenta\'e7\'e3o. Sua tarefa foi criar a p\'e1gina dashboard_cancelamentos_voos.html e liderar a compila\'e7\'e3o deste relat\'f3rio final.\par
+2.4 Metas, crit\'e9rios ou indicadores de avalia\'e7\'e3o do projeto\par
+As metas do projeto ser\'e3o avaliadas atrav\'e9s de indicadores claros e textuais. A primeira meta \'e9 coletar 100% dos arquivos CSV de VRA dispon\'edveis; o indicador de sucesso ser\'e1 a presen\'e7a do n\'famero esperado de arquivos na pasta de destino ap\'f3s a execu\'e7\'e3o do script. A segunda meta \'e9 consolidar e analisar os dados; seu indicador ser\'e1 a execu\'e7\'e3o completa e sem erros do script results.py, resultando na cria\'e7\'e3o do arquivo HTML final. A terceira meta \'e9 a clareza da informa\'e7\'e3o; o indicador ser\'e1 um dashboard funcional cujo conte\'fado textual reflita acuradamente as estat\'edsticas sobre os cancelamentos, validado por uma revis\'e3o interna do grupo.\par
+\par
+2.5 Recursos previstos\par
+Os recursos para o projeto s\'e3o majoritariamente humanos e institucionais. Em termos humanos, o projeto conta com os quatro discentes e um professor orientador. Os recursos materiais e institucionais incluem os computadores pessoais dos alunos, acesso \'e0 internet e um conjunto de softwares de c\'f3digo aberto, como a linguagem Python com suas bibliotecas (Pandas, Requests, BeautifulSoup4), o editor VS Code e a plataforma GitHub. N\'e3o h\'e1 previs\'e3o de gastos financeiros, pois o projeto foi desenhado para ser executado integralmente com recursos gratuitos.\par
+\par
+2.6 Detalhamento t\'e9cnico do projeto\par
+A solu\'e7\'e3o tecnol\'f3gica desenvolvida segue um fluxo de quatro etapas principais. A primeira \'e9 a Extra\'e7\'e3o, onde o script scraper_anac.py navega at\'e9 o portal SIROS da ANAC e baixa sistematicamente os arquivos CSV de 2000 a 2024. A segunda \'e9 a Consolida\'e7\'e3o, onde uma rotina l\'ea cada CSV baixado e os une em um \'fanico conjunto de dados com o aux\'edlio da biblioteca Pandas. A terceira etapa \'e9 a An\'e1lise e Gera\'e7\'e3o de Conte\'fado, na qual o script results.py calcula as estat\'edsticas sobre os voos cancelados e formata os resultados em senten\'e7as de texto. A quarta e \'faltima etapa \'e9 a Apresenta\'e7\'e3o, onde o mesmo script results.py gera o arquivo dashboard_cancelamentos_voos.html, inserindo os textos anal\'edticos em uma estrutura HTML simples e auto-contida.\par
+\par
+3. ENCERRAMENTO DO PROJETO\par
+3.1 Relato Coletivo\par
+A execu\'e7\'e3o deste projeto permitiu ao grupo atingir plenamente os objetivos sociocomunit\'e1rios estabelecidos. O objetivo principal era traduzir um volume massivo de dados p\'fablicos brutos em informa\'e7\'e3o clara e acess\'edvel para o cidad\'e3o comum, e a solu\'e7\'e3o desenvolvida cumpre exatamente essa fun\'e7\'e3o. Conseguimos criar um fluxo de trabalho automatizado que vai desde a coleta dos dados no site da ANAC at\'e9 a apresenta\'e7\'e3o de insights em um dashboard textual. Acreditamos que a ferramenta dashboard_cancelamentos_voos.html serve como uma prova de conceito poderosa de como a tecnologia e a ci\'eancia de dados podem ser aplicadas para promover a transpar\'eancia e o controle social, entregando um produto com potencial de impacto real para milh\'f5es de viajantes no Brasil.\par
+\par
+3.2 Avalia\'e7\'e3o de rea\'e7\'e3o da parte interessada\par
+Para avaliar o efetivo atingimento dos objetivos, o dashboard final incluir\'e1 uma se\'e7\'e3o de "Feedback", com um link para um formul\'e1rio online simples. O formul\'e1rio buscar\'e1 aferir, por meio de perguntas diretas e campos de texto, a clareza, a utilidade e a percep\'e7\'e3o geral do p\'fablico sobre a ferramenta. Os resultados deste formul\'e1rio, juntamente com depoimentos volunt\'e1rios, ser\'e3o compilados para evidenciar a rea\'e7\'e3o da comunidade e validar o impacto social do projeto. Um exemplo de depoimento esperado poderia ser: "Excelente iniciativa! Sempre tive curiosidade de saber qual companhia a\'e9rea cancelava mais voos na rota que eu sempre fa\'e7o. Agora tenho uma ideia muito melhor. Obrigado!".\par
+\par
+3.3 Relato de Experi\'eancia Individual\par
+Nome: Luiz Ant\'f4nio J\'fanior\par
+\par
+CONTEXTUALIZA\'c7\'c3O: Atuei como respons\'e1vel pela coleta de dados, uma etapa cr\'edtica que alimentou todo o projeto. Minha participa\'e7\'e3o consistiu em desenvolver o web scraper para extrair os dados da ANAC.\par
+METODOLOGIA: A experi\'eancia ocorreu remotamente, utilizando meu computador pessoal. Desenvolvi o script scraper_anac.py em Python, usando as bibliotecas Requests e BeautifulSoup4 para interagir com o site da ANAC e baixar sistematicamente todos os arquivos CSV mensais de 2000 a 2024.\par
+RESULTADOS E DISCUSS\'c3O: A expectativa era uma tarefa linear, mas encontrei dificuldades com a instabilidade do site e varia\'e7\'f5es nos links, exigindo um c\'f3digo mais robusto. A maior descoberta foi o vasto potencial dos dados dispon\'edveis. Senti grande satisfa\'e7\'e3o ao ver o script baixar com sucesso mais de 280 arquivos de forma aut\'f4noma.\par
+REFLEX\'c3O APROFUNDADA: A experi\'eancia conectou-se diretamente com a teoria sobre a etapa de "Obten\'e7\'e3o de Dados" do ciclo de vida de projetos de dados, como o CRISP-DM. Percebi na pr\'e1tica que sem dados de qualidade, todo o resto do projeto fica comprometido.\par
+CONSIDERA\'c7\'d5ES FINAIS: Futuramente, o scraper poderia ser adaptado para rodar periodicamente em um servidor para manter a base atualizada. Uma solu\'e7\'e3o alternativa seria usar APIs oficiais da ANAC, caso existissem.\par
+Nome: Cl\'e9lio Medina\par
+\par
+CONTEXTUALIZA\'c7\'c3O: Fui o respons\'e1vel pela etapa de consolida\'e7\'e3o e limpeza dos dados, preparando a base para a an\'e1lise.\par
+METODOLOGIA: Utilizando a biblioteca Pandas do Python, desenvolvi rotinas para ler todos os CSVs baixados, uni-los em um \'fanico DataFrame, padronizar colunas e tratar valores ausentes ou inconsistentes.\par
+RESULTADOS E DISCUSS\'c3O: O vivido superou a expectativa em complexidade. A "sujeira" nos dados era maior que o imaginado. A maior aprendizagem foi a m\'e1xima de que 80% do trabalho em ci\'eancia de dados \'e9 a prepara\'e7\'e3o dos dados. Senti-me como um "artes\'e3o de dados", transformando mat\'e9ria-prima bruta em algo polido.\par
+REFLEX\'c3O APROFUNDADA: Esta tarefa materializou o conceito de "Data Wrangling". A necessidade de documentar cada passo da limpeza para garantir a reprodutibilidade da an\'e1lise, um pilar do m\'e9todo cient\'edfico, tornou-se evidente.\par
+CONSIDERA\'c7\'d5ES FINAIS: Para trabalhos futuros, poder\'edamos explorar t\'e9cnicas mais avan\'e7adas de imputa\'e7\'e3o de dados. Uma alternativa seria o uso de ferramentas de ETL como o Apache Airflow para orquestrar o pipeline de dados.\par
+Nome: \'cdtalo Targino\par
+\par
+CONTEXTUALIZA\'c7\'c3O: Minha responsabilidade foi a an\'e1lise dos dados e a gera\'e7\'e3o dos resultados textuais, o "cora\'e7\'e3o" do projeto.\par
+METODOLOGIA: Com o dataset limpo, utilizei o Pandas para realizar as opera\'e7\'f5es de agrega\'e7\'e3o e c\'e1lculo. Filtrei os voos cancelados, agrupei por diferentes dimens\'f5es e calculei as m\'e9tricas percentuais. Por fim, criei uma fun\'e7\'e3o que formatava esses n\'fameros em senten\'e7as de texto prontas.\par
+RESULTADOS E DISCUSS\'c3O: Foi fascinante observar os padr\'f5es emergindo dos dados, como o impacto de crises no n\'famero de cancelamentos. A principal descoberta foi a capacidade de contar uma hist\'f3ria com os dados, como proposto por Knaflic. Senti-me como um tradutor, convertendo a linguagem dos dados para o portugu\'eas claro.\par
+REFLEX\'c3O APROFUNDADA: A teoria do "Storytelling com Dados" foi aplicada na pr\'e1tica. A escolha de quais m\'e9tricas mostrar e como apresent\'e1-las foi um exerc\'edcio constante de colocar o p\'fablico em primeiro lugar.\par
+CONSIDERA\'c7\'d5ES FINAIS: Uma pesquisa futura poderia aplicar machine learning para prever a probabilidade de cancelamento de um voo. Uma solu\'e7\'e3o alternativa seria um bot de Telegram ou WhatsApp que respondesse a perguntas do usu\'e1rio.\par
+Nome: Vladmir\par
+\par
+CONTEXTUALIZA\'c7\'c3O: Meu papel foi desenvolver o produto final, o dashboard web, e cuidar da documenta\'e7\'e3o geral do projeto.\par
+METODOLOGIA: Criei o arquivo dashboard_cancelamentos_voos.html focando em simplicidade e legibilidade. Integrei os textos gerados pelo script do \'cdtalo e organizei a estrutura deste relat\'f3rio.\par
+RESULTADOS E DISCUSS\'c3O: O desafio era criar uma apresenta\'e7\'e3o de dados eficaz sem usar gr\'e1ficos, o que me for\'e7ou a pensar sobre tipografia e hierarquia visual do texto. Descobri que uma apresenta\'e7\'e3o textual bem-feita pode ser muito impactante. Senti-me respons\'e1vel por ser a "ponte" final entre a t\'e9cnica e o p\'fablico.\par
+REFLEX\'c3O APROFUNDADA: A experi\'eancia refor\'e7ou a import\'e2ncia da UI/UX. A teoria de Castells sobre o acesso \'e0 informa\'e7\'e3o guiou meu trabalho: a interface precisava ser transparente e intuitiva para democratizar o acesso.\par
+CONSIDERA\'c7\'d5ES FINAIS: Futuramente, o dashboard poderia evoluir para uma aplica\'e7\'e3o web din\'e2mica com filtros interativos. Uma alternativa seria criar um infogr\'e1fico est\'e1tico, facilmente compartilh\'e1vel em redes sociais.\par
+}
+ 
